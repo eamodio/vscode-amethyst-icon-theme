@@ -1,0 +1,49 @@
+{
+	"name": "amethyst-icon-theme",
+	"displayName": "Amethyst Icon Theme",
+	"description": "A set of icons",
+	"version": "0.0.1",
+	"publisher": "eamodio",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"icons"
+	],
+	"galleryBanner": {
+		"color": "#7d16bf",
+		"theme": "dark"
+	},
+	"icon": "images/icon.png",
+	"homepage": "https://github.com/eamodio/vscode-amethyst-icon-theme/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/eamodio/vscode-amethyst-icon-theme/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eamodio/vscode-amethyst-icon-theme.git"
+	},
+	"enableProposedApi": true,
+	"contributes": {
+		"productIconThemes": [
+			{
+				"id": "amethyst-icon-theme",
+				"label": "Amethyst Icons",
+				"path": "./producticons/amethyst-product-icon-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"pack": "git clean -df && vsce package",
+		"pretty": "prettier --config .prettierrc --loglevel warn --write \"./**/*.{js,md,json}\"",
+		"pub": "git clean -df && vsce publish"
+	},
+	"devDependencies": {
+		"prettier": "2.0.2",
+		"vsce": "1.74.0"
+	}
+}

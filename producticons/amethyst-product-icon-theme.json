@@ -1,0 +1,21 @@
+{
+	"fonts": [
+		// {
+		// 	"id": "font-awesome",
+		// 	"src": [{ "format": "otf", "path": "themes/Font Awesome 5 Free-Regular-400.otf" }],
+		// 	"style": "normal",
+		// 	"weight": "normal"
+		// },
+		{
+			"id": "elegant",
+			"src": [{ "format": "woff", "path": "themes/ElegantIcons.woff" }],
+			"style": "normal",
+			"weight": "normal"
+		}
+	],
+	"iconDefinitions": {
+		"compare-changes": {
+			"fontCharacter": "\\e030"
+		}
+	}
+}
